@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
-    "start": "next start -p 4000"
+    "start": "next start -p 4000",
+    "make-admin": "tsx --env-file=.env.local scripts/make-admin.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,8 +22,15 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.13",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
